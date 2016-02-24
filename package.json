@@ -1,0 +1,39 @@
+{
+  "name": "pay_platform",
+  "description": "支付工具",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "eslint src",
+    "start": "node www/index.js",
+    "compile": "babel src -d lib -D",
+    "watch-compile": "npm run compile -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node4",
+      "stage-2"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "dependencies": {
+    "babel-runtime": "6.x.x",
+    "request-promise": "*",
+    "sprintf-js": "^1.0.2",
+    "xml2js": "*",
+    "bull": "*",
+    "mocha": "*",
+    "should": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "6.x.x",
+    "babel-core": "6.x.x",
+    "babel-preset-es2015-node4": "*",
+    "babel-preset-stage-2": "6.x.x",
+    "babel-plugin-transform-runtime": "6.x.x",
+    "babel-eslint": "*",
+    "eslint": "1.10.2",
+    "mocha": "1.20.1"
+  }
+}

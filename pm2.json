@@ -1,0 +1,16 @@
+//use pm2 start app
+//pm2 startOrGracefulReload pm2.json
+{
+  "apps": [{
+    "name": "PayCenter",
+    "script": "www/index.js",
+    "cwd": "/Users/haoli/Documents/nodejsworkspace/PayCenter",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": "--harmony",
+    "args": [],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
